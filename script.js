@@ -1,7 +1,7 @@
 const fruit = [
   "Apple",
   "Apricot",
-  "Avocado 🥑",
+  "Avocado",
   "Banana",
   "Bilberry",
   "Blackberry",
@@ -53,7 +53,7 @@ const fruit = [
   "Olive",
   "Orange",
   "Clementine",
-  "Mandarine",
+  "Mandarin",
   "Tangerine",
   "Papaya",
   "Passionfruit",
@@ -97,25 +97,26 @@ function searchHandler(e) {
     result = fruit.filter((keyword) => {
       return keyword.toLowerCase().includes(input.toLowerCase());
     });
-    console.log(result);
   }
   display(result);
 }
 
 function display(result) {
   const content = result.map((list) => {
-    return "<li>" + list + "</li>";
+    return "<li onclick = useSuggestion(this)>" + list + "</li>";
   });
-  suggestions.innerHTML = content;
+  suggestions.innerHTML = content.join("");
 }
 
 // function showSuggestions(results, inputVal) {
 //   // TODO
 // }
 
-// function useSuggestion(e) {
-//   // TODO
-// }
+function useSuggestion(e) {
+  // TODO
+  inputBox.value = e.innerHTML;
+  suggestions.innerHTML = "";
+}
 
 inputBox.addEventListener("keyup", searchHandler);
 // suggestions.addEventListener("click", useSuggestion);

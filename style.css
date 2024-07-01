@@ -7,18 +7,24 @@
 
 :focus {
   /* TODO */
+  outline: none;
 }
 
 body {
+  background: rgb(238, 174, 202);
+  background: linear-gradient(to right, #ffd700, #ff8c00);
 }
 
 input {
-  margin: 200px auto;
+  margin: 200px auto 15px;
+  background: linear-gradient(to right, #f4b518, #f09e0f);
 }
 
 .search-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   border-radius: 5px;
 }
 
@@ -34,7 +40,7 @@ input {
 }
 
 ul {
-  /* TODO */
+  list-style-type: none;
 }
 ul.has-suggestions {
   /* TODO */
@@ -43,7 +49,9 @@ ul li {
   /* TODO */
 }
 ul li:hover {
-  /* TODO */
+  cursor: pointer;
+  background-color: rgb(235, 144, 111);
+  font-weight: 600;
 }
 
 input {
