@@ -82,15 +82,7 @@ const fruit = [
 const inputBox = document.querySelector("#fruit");
 const suggestions = document.querySelector(".suggestions ul");
 
-// function search(str) {
-//   let results = [];
-
-//   // TODO
-
-//   return results;
-// }
-
-function searchHandler(e) {
+function search(e) {
   let result = [];
   let input = inputBox.value;
   if (input.length) {
@@ -108,15 +100,11 @@ function display(result) {
   suggestions.innerHTML = content.join("");
 }
 
-// function showSuggestions(results, inputVal) {
-//   // TODO
-// }
-
 function useSuggestion(e) {
-  // TODO
   inputBox.value = e.innerHTML;
   suggestions.innerHTML = "";
 }
 
-inputBox.addEventListener("keyup", searchHandler);
-// suggestions.addEventListener("click", useSuggestion);
+inputBox.addEventListener("keyup", search);
+
+//Code Help from ChatGPT and https://www.youtube.com/watch?v=pdyFf1ugVfk
