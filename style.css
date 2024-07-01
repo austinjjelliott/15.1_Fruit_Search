@@ -25,6 +25,7 @@ input {
   justify-content: center;
   align-items: center;
   border-radius: 5px;
+  overflow-y: scroll;
 }
 
 ul {
@@ -35,4 +36,9 @@ ul li:hover {
   cursor: pointer;
   background-color: rgb(235, 144, 111);
   font-weight: 600;
+}
+
+ul {
+  max-height: 450px;
+  overflow-y: scroll;
 }
