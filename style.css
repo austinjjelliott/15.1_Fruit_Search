@@ -1,31 +1,36 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-size: xx-large;
 }
 
 :focus {
- /* TODO */
-}
-
-body {
   /* TODO */
 }
 
+body {
+}
+
 input {
- /* TODO */
+  margin: 200px auto;
 }
 
 .search-container {
- /* TODO */
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
 }
+
 .search-container input,
 .search-container .suggestions {
   /* TODO */
 }
 .search-container input {
- /* TODO */
+  /* TODO */
 }
 .search-container .suggestions {
-   /* TODO */
+  /* TODO */
 }
 
 ul {
@@ -42,5 +47,5 @@ ul li:hover {
 }
 
 input {
-   /* TODO */
+  /* TODO */
 }
